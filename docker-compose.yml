@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  wetter-app:
+    build: .
+    ports:
+      - "5050:5050"
+    env_file:
+      - .env
+    restart: unless-stopped
+    # Optional: If you want to run the DB containerized as well, you would add a mysql service here.
+    # For now, we assume an external DB or one defined in .env

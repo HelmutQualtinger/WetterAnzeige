@@ -29,17 +29,17 @@ def index():
 @app.route('/api/countries')
 def get_countries():
     """Get all unique countries from weather_data"""
-    conn = get_db_connection()
-    countries = []
-    if conn:
-        cursor = conn.cursor()
-        query = "SELECT DISTINCT country FROM weather_data ORDER BY country"
-        cursor.execute(query)
-        results = cursor.fetchall()
-        cursor.close()
-        conn.close()
-        countries = [row[0] for row in results if row[0]]
-    return jsonify(countries)
+    if conn := get_db_connection():
+        try:
+            cursor = conn.cursor()
+            query = "SELECT DISTINCT country FROM location_table ORDER BY country"
+            cursor.execute(query)
+            results = cursor.fetchall()
+            return jsonify([row[0] for row in results if row[0]])
+        finally:
+            cursor.close()
+            conn.close()
+    return jsonify({"error": "Failed to connect to database"}), 500
 
 @app.route('/api/cantons')
 def get_cantons():
@@ -49,7 +49,7 @@ def get_cantons():
     cantons = []
     if conn and country:
         cursor = conn.cursor()
-        query = "SELECT DISTINCT canton FROM weather_data WHERE country = %s ORDER BY canton"
+        query = "SELECT DISTINCT canton FROM location_table WHERE country = %s ORDER BY canton"
         cursor.execute(query, (country,))
         results = cursor.fetchall()
         cursor.close()
@@ -62,17 +62,21 @@ def get_cities():
     """Get all cities for a specific country and canton"""
     country = request.args.get('country', '')
     canton = request.args.get('canton', '')
-    conn = get_db_connection()
-    cities = []
-    if conn and country and canton:
-        cursor = conn.cursor()
-        query = "SELECT DISTINCT city FROM weather_data WHERE country = %s AND canton = %s ORDER BY city"
-        cursor.execute(query, (country, canton))
-        results = cursor.fetchall()
-        cursor.close()
-        conn.close()
-        cities = [row[0] for row in results if row[0]]
-    return jsonify(cities)
+    try:
+        conn = get_db_connection()
+        if conn and country and canton:
+            cursor = conn.cursor()
+            query = "SELECT DISTINCT city FROM location_table WHERE country = %s AND canton = %s ORDER BY city"
+            cursor.execute(query, (country, canton))
+            results = cursor.fetchall()
+            return jsonify([row[0] for row in results if row[0]])
+    except Error as e:
+        return jsonify({"error": f"Error retrieving cities: {e}"}), 500
+    finally:
+        if conn:
+            cursor.close()
+            conn.close()
+    return jsonify({"error": "Failed to connect to database"}), 500
 
 @app.route('/api/weather')
 def get_weather():
@@ -81,29 +85,31 @@ def get_weather():
     canton = request.args.get('canton', 'Vorarlberg')
     city = request.args.get('city', 'Feldkirch')
 
-    conn = get_db_connection()
     data = {}
-    if conn:
-        cursor = conn.cursor(dictionary=True)
-        query = """
-            SELECT * FROM weather_data
-            WHERE city = %s
-            AND canton = %s
-            AND country = %s
-            ORDER BY dt DESC
-            LIMIT 1
-        """
-        cursor.execute(query, (city, canton, country))
-        result = cursor.fetchone()
-        cursor.close()
-        conn.close()
-
-        if result:
-            data = result
-        else:
-            data = {"error": "Keine Daten gefunden"}
-    else:
-        data = {"error": "Datenbankverbindung fehlgeschlagen"}
+    try:
+        conn = get_db_connection()
+        if conn:
+            cursor = conn.cursor(dictionary=True)
+            query = """
+                SELECT * FROM weather_data
+                WHERE city = %s
+                AND canton = %s
+                AND country = %s
+                ORDER BY dt DESC
+                LIMIT 1
+            """
+            cursor.execute(query, (city, canton, country))
+            result = cursor.fetchone()
+            if result:
+                data = result
+            else:
+                data = {"error": "Keine Daten gefunden"}
+    except Error as e:
+        data = {"error": f"Datenbankverbindung fehlgeschlagen: {e}"}
+    finally:
+        if conn:
+            cursor.close()
+            conn.close()
 
     return jsonify(data)
 

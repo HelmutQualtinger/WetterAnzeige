@@ -55,6 +55,20 @@ python app.py
 
 Die Anwendung ist nun unter `http://localhost:5050` erreichbar.
 
+## Docker
+
+Alternativ kannst du die Anwendung auch mit Docker starten.
+
+1. **Image bauen und starten**
+   ```bash
+   docker-compose up -d --build
+   ```
+
+2. **Container stoppen**
+   ```bash
+   docker-compose down
+   ```
+
 ## Projektstruktur
 
 - `app.py`: Hauptanwendung (Backend), API-Endpunkte.
