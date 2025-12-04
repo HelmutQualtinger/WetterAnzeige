@@ -1,0 +1,445 @@
+Eisenstadt, Burgenland, AT
+Mattersburg, Burgenland, AT
+Oberwart, Burgenland, AT
+Klagenfurt, Kärnten, AT
+Sankt Veit an der Glan, Kärnten, AT
+Spittal an der Drau, Kärnten, AT
+Villach, Kärnten, AT
+Wolfsberg, Kärnten, AT
+Amstetten, Niederösterreich, AT
+Baden, Niederösterreich, AT
+Ebreichsdorf, Niederösterreich, AT
+Gänserndorf, Niederösterreich, AT
+Gmünd, Niederösterreich, AT
+Hollabrunn, Niederösterreich, AT
+Klosterneuburg, Niederösterreich, AT
+Korneuburg, Niederösterreich, AT
+Krems, Niederösterreich, AT
+Krems an der Donau, Niederösterreich, AT
+Mistelbach, Niederösterreich, AT
+Mödling, Niederösterreich, AT
+Neunkirchen, Niederösterreich, AT
+Perchtoldsdorf, Niederösterreich, AT
+Retz, Niederösterreich, AT
+Schwechat, Niederösterreich, AT
+St. Pölten, Niederösterreich, AT
+Stockerau, Niederösterreich, AT
+Ternitz, Niederösterreich, AT
+Tulln, Niederösterreich, AT
+Waidhofen an der Ybbs, Niederösterreich, AT
+Wiener Neustadt, Niederösterreich, AT
+Zwettl, Niederösterreich, AT
+Ansfelden, Oberösterreich, AT
+Bad Ischl, Oberösterreich, AT
+Enns, Oberösterreich, AT
+Gmunden, Oberösterreich, AT
+Linz, Oberösterreich, AT
+Marchtrenk, Oberösterreich, AT
+Ried im Innkreis, Oberösterreich, AT
+Schärding, Oberösterreich, AT
+Steyr, Oberösterreich, AT
+Traun, Oberösterreich, AT
+Vöcklabruck, Oberösterreich, AT
+Wels, Oberösterreich, AT
+Bischofshofen, Salzburg, AT
+Hallein, Salzburg, AT
+Saalfelden, Salzburg, AT
+Salzburg, Salzburg, AT
+Seekirchen am Wallersee, Salzburg, AT
+Zell am See, Salzburg, AT
+Bruck an der Mur, Steiermark, AT
+Graz, Steiermark, AT
+Kapfenberg, Steiermark, AT
+Knittelfeld, Steiermark, AT
+Leoben, Steiermark, AT
+Trofaiach, Steiermark, AT
+Hall in Tirol, Tirol, AT
+Innsbruck, Tirol, AT
+Kufstein, Tirol, AT
+Lienz, Tirol, AT
+Schwaz, Tirol, AT
+Telfs, Tirol, AT
+Wörgl, Tirol, AT
+Bludenz, Vorarlberg, AT
+Bregenz, Vorarlberg, AT
+Dornbirn, Vorarlberg, AT
+Feldkirch, Vorarlberg, AT
+Götzis, Vorarlberg, AT
+Hard, Vorarlberg, AT
+Hohenems, Vorarlberg, AT
+Lustenau, Vorarlberg, AT
+Rankweil, Vorarlberg, AT
+Wien, Wien, AT
+Aarau, Aargau, CH
+Baden, Aargau, CH
+Brugg, Aargau, CH
+Möhlin, Aargau, CH
+Spreitenbach, Aargau, CH
+Wettingen, Aargau, CH
+Wohlen, Aargau, CH
+Zofingen, Aargau, CH
+Aesch, Basel-Landschaft, CH
+Allschwil, Basel-Landschaft, CH
+Binningen, Basel-Landschaft, CH
+Münchenstein, Basel-Landschaft, CH
+Muttenz, Basel-Landschaft, CH
+Oberwil, Basel-Landschaft, CH
+Pratteln, Basel-Landschaft, CH
+Basel, Basel-Stadt, CH
+Riehen, Basel-Stadt, CH
+Bern, Bern, CH
+Biel/Bienne, Bern, CH
+Ittigen, Bern, CH
+Köniz, Bern, CH
+Muri bei Bern, Bern, CH
+Steffisburg, Bern, CH
+Thun, Bern, CH
+Worb, Bern, CH
+Zollikofen, Bern, CH
+Bulle, Freiburg, CH
+Freiburg, Freiburg, CH
+Carouge, Genf, CH
+Genf, Genf, CH
+Lancy, Genf, CH
+Meyrin, Genf, CH
+Vernier, Genf, CH
+Veyrier, Genf, CH
+Chur, Graubünden, CH
+Simplon, Kaiserreich der Simpler, CH
+Flums, Königreich der Bösch, CH
+Ebikon, Luzern, CH
+Emmen, Luzern, CH
+Horw, Luzern, CH
+Kriens, Luzern, CH
+Luzern, Luzern, CH
+La Chaux-de-Fonds, Neuenburg, CH
+Neuenburg, Neuenburg, CH
+Schaffhausen, Schaffhausen, CH
+Grenchen, Solothurn, CH
+Olten, Solothurn, CH
+Altstätten, St. Gallen, CH
+Gossau, St. Gallen, CH
+Rapperswil-Jona, St. Gallen, CH
+St. Gallen, St. Gallen, CH
+Uzwil, St. Gallen, CH
+Wil, St. Gallen, CH
+Bellinzona, Tessin, CH
+Locarno, Tessin, CH
+Lugano, Tessin, CH
+Amriswil, Thurgau, CH
+Arbon, Thurgau, CH
+Frauenfeld, Thurgau, CH
+Kreuzlingen, Thurgau, CH
+Romanshorn, Thurgau, CH
+Weinfelden, Thurgau, CH
+Gland, Waadt, CH
+Lausanne, Waadt, CH
+Montreux, Waadt, CH
+Morges, Waadt, CH
+Nyon, Waadt, CH
+Pully, Waadt, CH
+Renens, Waadt, CH
+Vevey, Waadt, CH
+Yverdon-les-Bains, Waadt, CH
+Brig-Glis, Wallis, CH
+Monthey, Wallis, CH
+Siders, Wallis, CH
+Sitten, Wallis, CH
+Baar, Zug, CH
+Cham, Zug, CH
+Zug, Zug, CH
+Adliswil, Zürich, CH
+Bassersdorf, Zürich, CH
+Bülach, Zürich, CH
+Dietikon, Zürich, CH
+Dübendorf, Zürich, CH
+Horgen, Zürich, CH
+Kloten, Zürich, CH
+Küsnacht, Zürich, CH
+Meilen, Zürich, CH
+Pfäffikon, Zürich, CH
+Regensdorf, Zürich, CH
+Rüti, Zürich, CH
+Schlieren, Zürich, CH
+Thalwil, Zürich, CH
+Uster, Zürich, CH
+Volketswil, Zürich, CH
+Wädenswil, Zürich, CH
+Wetzikon, Zürich, CH
+Winterthur, Zürich, CH
+Zollikon, Zürich, CH
+Zürich, Zürich, CH
+Freiburg im Breisgau, Baden-Württemberg, DE
+Heidelberg, Baden-Württemberg, DE
+Heilbronn, Baden-Württemberg, DE
+Karlsruhe, Baden-Württemberg, DE
+Mannheim, Baden-Württemberg, DE
+Pforzheim, Baden-Württemberg, DE
+Reutlingen, Baden-Württemberg, DE
+Stuttgart, Baden-Württemberg, DE
+Ulm, Baden-Württemberg, DE
+Augsburg, Bayern, DE
+Erlangen, Bayern, DE
+Fürth, Bayern, DE
+Ingolstadt, Bayern, DE
+München, Bayern, DE
+Nürnberg, Bayern, DE
+Regensburg, Bayern, DE
+Würzburg, Bayern, DE
+Berlin, Berlin, DE
+Potsdam, Brandenburg, DE
+Bremen, Bremen, DE
+Bremerhaven, Bremen, DE
+Hamburg, Hamburg, DE
+Darmstadt, Hessen, DE
+Frankfurt am Main, Hessen, DE
+Kassel, Hessen, DE
+Offenbach am Main, Hessen, DE
+Wiesbaden, Hessen, DE
+Rostock, Mecklenburg-Vorpommern, DE
+Braunschweig, Niedersachsen, DE
+Göttingen, Niedersachsen, DE
+Hannover, Niedersachsen, DE
+Hildesheim, Niedersachsen, DE
+Oldenburg, Niedersachsen, DE
+Osnabrück, Niedersachsen, DE
+Salzgitter, Niedersachsen, DE
+Wolfsburg, Niedersachsen, DE
+Aachen, Nordrhein-Westfalen, DE
+Bergisch Gladbach, Nordrhein-Westfalen, DE
+Bielefeld, Nordrhein-Westfalen, DE
+Bochum, Nordrhein-Westfalen, DE
+Bonn, Nordrhein-Westfalen, DE
+Bottrop, Nordrhein-Westfalen, DE
+Dortmund, Nordrhein-Westfalen, DE
+Duisburg, Nordrhein-Westfalen, DE
+Düsseldorf, Nordrhein-Westfalen, DE
+Essen, Nordrhein-Westfalen, DE
+Gelsenkirchen, Nordrhein-Westfalen, DE
+Gütersloh, Nordrhein-Westfalen, DE
+Hagen, Nordrhein-Westfalen, DE
+Hamm, Nordrhein-Westfalen, DE
+Herne, Nordrhein-Westfalen, DE
+Iserlohn, Nordrhein-Westfalen, DE
+Köln, Nordrhein-Westfalen, DE
+Krefeld, Nordrhein-Westfalen, DE
+Leverkusen, Nordrhein-Westfalen, DE
+Moers, Nordrhein-Westfalen, DE
+Mönchengladbach, Nordrhein-Westfalen, DE
+Mülheim an der Ruhr, Nordrhein-Westfalen, DE
+Münster, Nordrhein-Westfalen, DE
+Neuss, Nordrhein-Westfalen, DE
+Oberhausen, Nordrhein-Westfalen, DE
+Paderborn, Nordrhein-Westfalen, DE
+Recklinghausen, Nordrhein-Westfalen, DE
+Remscheid, Nordrhein-Westfalen, DE
+Siegen, Nordrhein-Westfalen, DE
+Solingen, Nordrhein-Westfalen, DE
+Witten, Nordrhein-Westfalen, DE
+Wuppertal, Nordrhein-Westfalen, DE
+Kaiserslautern, Rheinland-Pfalz, DE
+Koblenz, Rheinland-Pfalz, DE
+Ludwigshafen am Rhein, Rheinland-Pfalz, DE
+Mainz, Rheinland-Pfalz, DE
+Saarbrücken, Saarland, DE
+Chemnitz, Sachsen, DE
+Dresden, Sachsen, DE
+Leipzig, Sachsen, DE
+Halle (Saale), Sachsen-Anhalt, DE
+Magdeburg, Sachsen-Anhalt, DE
+Kiel, Schleswig-Holstein, DE
+Lübeck, Schleswig-Holstein, DE
+Erfurt, Thüringen, DE
+Jena, Thüringen, DE
+Chambéry, Auvergne-Rhône-Alpes, FR
+Clermont-Ferrand, Auvergne-Rhône-Alpes, FR
+Grenoble, Auvergne-Rhône-Alpes, FR
+Lyon, Auvergne-Rhône-Alpes, FR
+Saint-Étienne, Auvergne-Rhône-Alpes, FR
+Vénissieux, Auvergne-Rhône-Alpes, FR
+Villeurbanne, Auvergne-Rhône-Alpes, FR
+Besançon, Bourgogne-Franche-Comté, FR
+Dijon, Bourgogne-Franche-Comté, FR
+Brest, Brittany, FR
+Rennes, Brittany, FR
+Saint-Brieuc, Brittany, FR
+Bourges, Centre-Val de Loire, FR
+Châteauroux, Centre-Val de Loire, FR
+Orléans, Centre-Val de Loire, FR
+Tours, Centre-Val de Loire, FR
+Ajaccio, Corsica, FR
+Cayenne, French Guiana, FR
+Metz, Grand Est, FR
+Mulhouse, Grand Est, FR
+Nancy, Grand Est, FR
+Reims, Grand Est, FR
+Strasbourg, Grand Est, FR
+Troyes, Grand Est, FR
+Amiens, Hauts-de-France, FR
+Beauvais, Hauts-de-France, FR
+Calais, Hauts-de-France, FR
+Dunkerque, Hauts-de-France, FR
+Lille, Hauts-de-France, FR
+Roubaix, Hauts-de-France, FR
+Saint-Quentin, Hauts-de-France, FR
+Tourcoing, Hauts-de-France, FR
+Antony, Île-de-France, FR
+Argenteuil, Île-de-France, FR
+Asnières-sur-Seine, Île-de-France, FR
+Aubervilliers, Île-de-France, FR
+Bondy, Île-de-France, FR
+Boulogne-Billancourt, Île-de-France, FR
+Cergy, Île-de-France, FR
+Champigny-sur-Marne, Île-de-France, FR
+Châtillon, Île-de-France, FR
+Chelles, Île-de-France, FR
+Clichy, Île-de-France, FR
+Colombes, Île-de-France, FR
+Courbevoie, Île-de-France, FR
+Créteil, Île-de-France, FR
+Drancy, Île-de-France, FR
+Épinay-sur-Seine, Île-de-France, FR
+Évry, Île-de-France, FR
+Issy-les-Moulineaux, Île-de-France, FR
+Ivry-sur-Seine, Île-de-France, FR
+Le Blanc-Mesnil, Île-de-France, FR
+Levallois-Perret, Île-de-France, FR
+Maisons-Alfort, Île-de-France, FR
+Montreuil, Île-de-France, FR
+Nanterre, Île-de-France, FR
+Neuilly-sur-Seine, Île-de-France, FR
+Noisy-le-Grand, Île-de-France, FR
+Paris, Île-de-France, FR
+Rueil-Malmaison, Île-de-France, FR
+Saint-Denis, Île-de-France, FR
+Sarcelles, Île-de-France, FR
+Versailles, Île-de-France, FR
+Villejuif, Île-de-France, FR
+Vitry-sur-Seine, Île-de-France, FR
+Caen, Normandy, FR
+Le Havre, Normandy, FR
+Rouen, Normandy, FR
+Bordeaux, Nouvelle-Aquitaine, FR
+La Rochelle, Nouvelle-Aquitaine, FR
+Limoges, Nouvelle-Aquitaine, FR
+Mérignac, Nouvelle-Aquitaine, FR
+Pau, Nouvelle-Aquitaine, FR
+Pessac, Nouvelle-Aquitaine, FR
+Poitiers, Nouvelle-Aquitaine, FR
+Albi, Occitanie, FR
+Béziers, Occitanie, FR
+Montpellier, Occitanie, FR
+Nîmes, Occitanie, FR
+Perpignan, Occitanie, FR
+Sète, Occitanie, FR
+Toulouse, Occitanie, FR
+Angers, Pays de la Loire, FR
+Cholet, Pays de la Loire, FR
+Le Mans, Pays de la Loire, FR
+Nantes, Pays de la Loire, FR
+Aix-en-Provence, Provence-Alpes-Côte d'Azur, FR
+Antibes, Provence-Alpes-Côte d'Azur, FR
+Avignon, Provence-Alpes-Côte d'Azur, FR
+Cannes, Provence-Alpes-Côte d'Azur, FR
+Hyères, Provence-Alpes-Côte d'Azur, FR
+La Seyne-sur-Mer, Provence-Alpes-Côte d'Azur, FR
+Marseille, Provence-Alpes-Côte d'Azur, FR
+Nice, Provence-Alpes-Côte d'Azur, FR
+Toulon, Provence-Alpes-Côte d'Azur, FR
+Saint-André, Réunion, FR
+Saint-Denis, Réunion, FR
+Saint-Paul, Réunion, FR
+Saint-Pierre, Réunion, FR
+Pescara, Abruzzo, IT
+Matera, Basilicata, IT
+Potenza, Basilicata, IT
+Cosenza, Calabria, IT
+Lamezia Terme, Calabria, IT
+Reggio Calabria, Calabria, IT
+Acerra, Campania, IT
+Aversa, Campania, IT
+Castellammare di Stabia, Campania, IT
+Cava de' Tirreni, Campania, IT
+Ercolano, Campania, IT
+Giugliano in Campania, Campania, IT
+Napoli, Campania, IT
+Pozzuoli, Campania, IT
+Salerno, Campania, IT
+Bologna, Emilia-Romagna, IT
+Cesena, Emilia-Romagna, IT
+Ferrara, Emilia-Romagna, IT
+Forlì, Emilia-Romagna, IT
+Imola, Emilia-Romagna, IT
+Modena, Emilia-Romagna, IT
+Piacenza, Emilia-Romagna, IT
+Ravenna, Emilia-Romagna, IT
+Reggio Emilia, Emilia-Romagna, IT
+Rimini, Emilia-Romagna, IT
+Pordenone, Friuli-Venezia Giulia, IT
+Trieste, Friuli-Venezia Giulia, IT
+Aprilia, Lazio, IT
+Civitavecchia, Lazio, IT
+Latina, Lazio, IT
+Pomezia, Lazio, IT
+Roma, Lazio, IT
+Velletri, Lazio, IT
+Viterbo, Lazio, IT
+Genova, Liguria, IT
+La Spezia, Liguria, IT
+Savona, Liguria, IT
+Bergamo, Lombardia, IT
+Brescia, Lombardia, IT
+Cinisello Balsamo, Lombardia, IT
+Como, Lombardia, IT
+Cremona, Lombardia, IT
+Legnano, Lombardia, IT
+Lodi, Lombardia, IT
+Milano, Lombardia, IT
+Monza, Lombardia, IT
+Rho, Lombardia, IT
+Sesto San Giovanni, Lombardia, IT
+Varese, Lombardia, IT
+Fano, Marche, IT
+Pesaro, Marche, IT
+Alessandria, Piemonte, IT
+Asti, Piemonte, IT
+Biella, Piemonte, IT
+Novara, Piemonte, IT
+Torino, Piemonte, IT
+Vercelli, Piemonte, IT
+Altamura, Puglia, IT
+Andria, Puglia, IT
+Bari, Puglia, IT
+Barletta, Puglia, IT
+Foggia, Puglia, IT
+Lecce, Puglia, IT
+Taranto, Puglia, IT
+Cagliari, Sardegna, IT
+Sassari, Sardegna, IT
+Agrigento, Sicilia, IT
+Catania, Sicilia, IT
+Marsala, Sicilia, IT
+Messina, Sicilia, IT
+Palermo, Sicilia, IT
+Ragusa, Sicilia, IT
+Siracusa, Sicilia, IT
+Trapani, Sicilia, IT
+Arezzo, Toscana, IT
+Carrara, Toscana, IT
+Firenze, Toscana, IT
+Grosseto, Toscana, IT
+Livorno, Toscana, IT
+Lucca, Toscana, IT
+Massa, Toscana, IT
+Prato, Toscana, IT
+Bolzano, Trentino-Alto Adige, IT
+Trento, Trentino-Alto Adige, IT
+Foligno, Umbria, IT
+Perugia, Umbria, IT
+Terni, Umbria, IT
+Padova, Veneto, IT
+Rovigo, Veneto, IT
+Venezia, Veneto, IT
+Verona, Veneto, IT
+Vicenza, Veneto, IT
+Vatikanstadt, Schweizer Garde, VA

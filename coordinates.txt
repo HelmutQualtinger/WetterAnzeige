@@ -1,0 +1,445 @@
+City, Canton, Country, Lat, Lon
+Eisenstadt, Burgenland, AT, 47.84565, 16.52327
+Mattersburg, Burgenland, AT, 47.73680, 16.39810
+Oberwart, Burgenland, AT, 47.28866, 16.20526
+Klagenfurt, Kärnten, AT, 46.61667, 14.30000
+Sankt Veit an der Glan, Kärnten, AT, 46.76694, 14.35722
+Spittal an der Drau, Kärnten, AT, 46.79167, 13.49583
+Villach, Kärnten, AT, 46.61833, 13.84833
+Wolfsberg, Kärnten, AT, 46.84194, 14.84083
+Amstetten, Niederösterreich, AT, 48.10457, 14.85299
+Baden, Niederösterreich, AT, 48.00750, 16.23444
+Ebreichsdorf, Niederösterreich, AT, 47.96111, 16.40472
+Gänserndorf, Niederösterreich, AT, 48.33996, 16.73257
+Gmünd, Niederösterreich, AT, 48.76667, 14.98333
+Hollabrunn, Niederösterreich, AT, 48.56667, 16.08333
+Klosterneuburg, Niederösterreich, AT, 48.30417, 16.31667
+Korneuburg, Niederösterreich, AT, 48.34528, 16.33306
+Krems, Niederösterreich, AT, 47.85857, 14.10427
+Krems an der Donau, Niederösterreich, AT, 48.40940, 15.60500
+Mistelbach, Niederösterreich, AT, 48.56667, 16.56667
+Mödling, Niederösterreich, AT, 48.08556, 16.28306
+Neunkirchen, Niederösterreich, AT, 47.72111, 16.08056
+Perchtoldsdorf, Niederösterreich, AT, 48.11667, 16.26667
+Retz, Niederösterreich, AT, 48.75369, 15.95716
+Schwechat, Niederösterreich, AT, 48.14111, 16.47861
+St. Pölten, Niederösterreich, AT, 48.20740, 15.61390
+Stockerau, Niederösterreich, AT, 48.38583, 16.21083
+Ternitz, Niederösterreich, AT, 47.71384, 16.03399
+Tulln, Niederösterreich, AT, 48.32738, 16.06422
+Waidhofen an der Ybbs, Niederösterreich, AT, 47.95964, 14.77453
+Wiener Neustadt, Niederösterreich, AT, 47.81667, 16.25000
+Zwettl, Niederösterreich, AT, 48.60220, 15.16830
+Ansfelden, Oberösterreich, AT, 48.20833, 14.28889
+Bad Ischl, Oberösterreich, AT, 47.71220, 13.62730
+Enns, Oberösterreich, AT, 47.32611, 13.35278
+Gmunden, Oberösterreich, AT, 47.91806, 13.79944
+Linz, Oberösterreich, AT, 48.30583, 14.28639
+Marchtrenk, Oberösterreich, AT, 48.19167, 14.11056
+Ried im Innkreis, Oberösterreich, AT, 48.20045, 13.48829
+Schärding, Oberösterreich, AT, 48.46346, 13.44257
+Steyr, Oberösterreich, AT, 48.05000, 14.41667
+Traun, Oberösterreich, AT, 47.65080, 13.94690
+Vöcklabruck, Oberösterreich, AT, 48.00861, 13.65583
+Wels, Oberösterreich, AT, 48.15000, 14.01667
+Bischofshofen, Salzburg, AT, 47.41002, 13.21713
+Hallein, Salzburg, AT, 47.66667, 13.08333
+Saalfelden, Salzburg, AT, 47.42656, 12.84807
+Salzburg, Salzburg, AT, 47.80000, 13.04500
+Seekirchen am Wallersee, Salzburg, AT, 47.90000, 13.13333
+Zell am See, Salzburg, AT, 47.32333, 12.79806
+Bruck an der Mur, Steiermark, AT, 47.41350, 15.27910
+Graz, Steiermark, AT, 47.07493, 15.44089
+Kapfenberg, Steiermark, AT, 47.43944, 15.28944
+Knittelfeld, Steiermark, AT, 47.21500, 14.82944
+Leoben, Steiermark, AT, 47.38167, 15.09722
+Trofaiach, Steiermark, AT, 47.42061, 15.01104
+Hall in Tirol, Tirol, AT, 47.28333, 11.50000
+Innsbruck, Tirol, AT, 47.26833, 11.39333
+Kufstein, Tirol, AT, 47.58333, 12.16667
+Lienz, Tirol, AT, 46.82830, 12.77140
+Schwaz, Tirol, AT, 47.33906, 11.73357
+Telfs, Tirol, AT, 47.30694, 11.07222
+Wörgl, Tirol, AT, 47.48306, 12.06639
+Bludenz, Vorarlberg, AT, 47.15333, 9.82194
+Bregenz, Vorarlberg, AT, 47.50500, 9.74917
+Dornbirn, Vorarlberg, AT, 47.41740, 9.73890
+Feldkirch, Vorarlberg, AT, 47.24111, 9.60417
+Götzis, Vorarlberg, AT, 47.33417, 9.64528
+Hard, Vorarlberg, AT, 47.48917, 9.69000
+Hohenems, Vorarlberg, AT, 47.36667, 9.66667
+Lustenau, Vorarlberg, AT, 47.42710, 9.67114
+Rankweil, Vorarlberg, AT, 47.26667, 9.65000
+Wien, Wien, AT, 48.21190, 16.38440
+Aarau, Aargau, CH, 47.39419, 8.04564
+Baden, Aargau, CH, 47.47291, 8.30799
+Brugg, Aargau, CH, 47.48639, 8.20833
+Möhlin, Aargau, CH, 47.55915, 7.84329
+Spreitenbach, Aargau, CH, 47.41811, 8.36610
+Wettingen, Aargau, CH, 47.46586, 8.32666
+Wohlen, Aargau, CH, 47.35056, 8.27778
+Zofingen, Aargau, CH, 47.28836, 7.94754
+Aesch, Basel-Landschaft, CH, 47.35404, 8.93366
+Allschwil, Basel-Landschaft, CH, 47.55074, 7.53599
+Binningen, Basel-Landschaft, CH, 47.53333, 7.56667
+Münchenstein, Basel-Landschaft, CH, 47.51324, 7.61727
+Muttenz, Basel-Landschaft, CH, 47.53359, 7.64789
+Oberwil, Basel-Landschaft, CH, 47.54710, 8.87080
+Pratteln, Basel-Landschaft, CH, 47.52267, 7.69082
+Basel, Basel-Stadt, CH, 47.56056, 7.59056
+Riehen, Basel-Stadt, CH, 47.58351, 7.65221
+Bern, Bern, CH, 46.94798, 7.44743
+Biel/Bienne, Bern, CH, 47.13713, 7.24608
+Ittigen, Bern, CH, 46.97750, 7.47917
+Köniz, Bern, CH, 46.92488, 7.41516
+Muri bei Bern, Bern, CH, 46.93194, 7.48722
+Steffisburg, Bern, CH, 46.77807, 7.63249
+Thun, Bern, CH, 46.75900, 7.63000
+Worb, Bern, CH, 46.93056, 7.56444
+Zollikofen, Bern, CH, 46.99972, 7.45694
+Bulle, Freiburg, CH, 47.11099, 7.10753
+Freiburg, Freiburg, CH, 46.8024, 7.1513
+Carouge, Genf, CH, 46.18166, 6.14037
+Genf, Genf, CH, 46.20000, 6.15000
+Lancy, Genf, CH, 46.18969, 6.11578
+Meyrin, Genf, CH, 46.23222, 6.07911
+Vernier, Genf, CH, 46.20000, 6.10000
+Veyrier, Genf, CH, 46.16667, 6.18333
+Chur, Graubünden, CH, 46.85212, 9.52965
+Simplon, Kaiserreich der Simpler, CH, 46.20000, 8.05000
+Flums, Königreich der Bösch, CH, 47.09280, 9.34390
+Ebikon, Luzern, CH, 47.08389, 8.34306
+Emmen, Luzern, CH, 46.80878, 8.07448
+Horw, Luzern, CH, 47.01639, 8.31111
+Kriens, Luzern, CH, 47.03444, 8.28000
+Luzern, Luzern, CH, 47.04714, 8.32518
+La Chaux-de-Fonds, Neuenburg, CH, 47.09963, 6.82956
+Neuenburg, Neuenburg, CH, 46.99028, 6.93056
+Schaffhausen, Schaffhausen, CH, 47.69653, 8.63386
+Grenchen, Solothurn, CH, 47.19306, 7.39583
+Olten, Solothurn, CH, 47.35306, 7.90778
+Altstätten, St. Gallen, CH, 47.37801, 9.54875
+Gossau, St. Gallen, CH, 47.30806, 8.75667
+Rapperswil-Jona, St. Gallen, CH, 47.22861, 8.83167
+St. Gallen, St. Gallen, CH, 47.42333, 9.37722
+Uzwil, St. Gallen, CH, 47.43644, 9.13099
+Wil, St. Gallen, CH, 47.60583, 8.50750
+Bellinzona, Tessin, CH, 46.19555, 9.02381
+Locarno, Tessin, CH, 46.16639, 8.79972
+Lugano, Tessin, CH, 46.01028, 8.96250
+Amriswil, Thurgau, CH, 47.55045, 9.30223
+Arbon, Thurgau, CH, 47.51667, 9.43333
+Frauenfeld, Thurgau, CH, 47.55583, 8.89639
+Kreuzlingen, Thurgau, CH, 47.64583, 9.17833
+Romanshorn, Thurgau, CH, 47.56354, 9.35639
+Weinfelden, Thurgau, CH, 47.56620, 9.10606
+Gland, Waadt, CH, 46.41667, 6.26667
+Lausanne, Waadt, CH, 46.51678, 6.62910
+Montreux, Waadt, CH, 46.50799, 6.61803
+Morges, Waadt, CH, 46.50945, 6.49861
+Nyon, Waadt, CH, 46.38202, 6.24072
+Pully, Waadt, CH, 46.51667, 6.66667
+Renens, Waadt, CH, 46.53704, 6.57894
+Vevey, Waadt, CH, 46.46667, 6.85000
+Yverdon-les-Bains, Waadt, CH, 46.77850, 6.64083
+Brig-Glis, Wallis, CH, 46.31592, 7.98762
+Monthey, Wallis, CH, 46.25565, 6.95523
+Siders, Wallis, CH, 46.29180, 7.53200
+Sitten, Wallis, CH, 46.23045, 7.36606
+Baar, Zug, CH, 47.19556, 8.52639
+Cham, Zug, CH, 47.18028, 8.45944
+Zug, Zug, CH, 46.87361, 9.89957
+Adliswil, Zürich, CH, 47.31222, 8.52556
+Bassersdorf, Zürich, CH, 47.44306, 8.62833
+Bülach, Zürich, CH, 47.51889, 8.54222
+Dietikon, Zürich, CH, 47.40610, 8.40500
+Dübendorf, Zürich, CH, 47.39806, 8.61944
+Horgen, Zürich, CH, 47.26083, 8.59750
+Kloten, Zürich, CH, 47.44806, 8.58278
+Küsnacht, Zürich, CH, 47.31806, 8.58250
+Meilen, Zürich, CH, 47.27028, 8.64111
+Pfäffikon, Zürich, CH, 47.36667, 8.78222
+Regensdorf, Zürich, CH, 47.43833, 8.47444
+Rüti, Zürich, CH, 46.55232, 7.41968
+Schlieren, Zürich, CH, 47.39889, 8.44972
+Thalwil, Zürich, CH, 47.28749, 8.55909
+Uster, Zürich, CH, 47.34917, 8.71917
+Volketswil, Zürich, CH, 47.39056, 8.69528
+Wädenswil, Zürich, CH, 47.23028, 8.67222
+Wetzikon, Zürich, CH, 47.32434, 8.80465
+Winterthur, Zürich, CH, 47.49920, 8.72671
+Zollikon, Zürich, CH, 47.34019, 8.57407
+Zürich, Zürich, CH, 47.37444, 8.54111
+Freiburg im Breisgau, Baden-Württemberg, DE, 47.99500, 7.85000
+Heidelberg, Baden-Württemberg, DE, 49.41222, 8.71000
+Heilbronn, Baden-Württemberg, DE, 49.14043, 9.21795
+Karlsruhe, Baden-Württemberg, DE, 51.04056, 14.45972
+Mannheim, Baden-Württemberg, DE, 49.48778, 8.46611
+Pforzheim, Baden-Württemberg, DE, 48.89000, 8.71083
+Reutlingen, Baden-Württemberg, DE, 48.50000, 9.21000
+Stuttgart, Baden-Württemberg, DE, 48.77750, 9.18000
+Ulm, Baden-Württemberg, DE, 48.57880, 8.04970
+Augsburg, Bayern, DE, 48.37167, 10.89833
+Erlangen, Bayern, DE, 49.59250, 11.00500
+Fürth, Bayern, DE, 49.54349, 10.55653
+Ingolstadt, Bayern, DE, 48.76306, 11.42500
+München, Bayern, DE, 49.55640, 11.58090
+Nürnberg, Bayern, DE, 49.44791, 11.04929
+Regensburg, Bayern, DE, 49.01667, 12.08333
+Würzburg, Bayern, DE, 49.79444, 9.92944
+Berlin, Berlin, DE, 52.50339, 13.33864
+Potsdam, Brandenburg, DE, 52.40000, 13.06667
+Bremen, Bremen, DE, 50.72390, 10.00250
+Bremerhaven, Bremen, DE, 53.55000, 8.58333
+Hamburg, Hamburg, DE, 53.56528, 10.00139
+Darmstadt, Hessen, DE, 49.86667, 8.65000
+Frankfurt am Main, Hessen, DE, 50.11056, 8.68222
+Kassel, Hessen, DE, 51.31578, 9.49792
+Offenbach am Main, Hessen, DE, 50.10000, 8.76667
+Wiesbaden, Hessen, DE, 50.08250, 8.24000
+Rostock, Mecklenburg-Vorpommern, DE, 54.08651, 12.15437
+Braunschweig, Niedersachsen, DE, 52.26471, 10.52333
+Göttingen, Niedersachsen, DE, 51.66526, 8.23164
+Hannover, Niedersachsen, DE, 52.36670, 9.73333
+Hildesheim, Niedersachsen, DE, 52.15000, 9.95000
+Oldenburg, Niedersachsen, DE, 53.14389, 8.21389
+Osnabrück, Niedersachsen, DE, 52.27889, 8.04306
+Salzgitter, Niedersachsen, DE, 52.15028, 10.35931
+Wolfsburg, Niedersachsen, DE, 51.42580, 6.81909
+Aachen, Nordrhein-Westfalen, DE, 50.75000, 6.25000
+Bergisch Gladbach, Nordrhein-Westfalen, DE, 50.99140, 7.12444
+Bielefeld, Nordrhein-Westfalen, DE, 52.01667, 8.53333
+Bochum, Nordrhein-Westfalen, DE, 51.47389, 7.22806
+Bonn, Nordrhein-Westfalen, DE, 50.71220, 7.08755
+Bottrop, Nordrhein-Westfalen, DE, 51.52325, 6.92527
+Dortmund, Nordrhein-Westfalen, DE, 51.51389, 7.46528
+Duisburg, Nordrhein-Westfalen, DE, 51.43222, 6.76111
+Düsseldorf, Nordrhein-Westfalen, DE, 51.22556, 6.77667
+Essen, Nordrhein-Westfalen, DE, 51.45681, 7.02317
+Gelsenkirchen, Nordrhein-Westfalen, DE, 51.55396, 7.07124
+Gütersloh, Nordrhein-Westfalen, DE, 51.90000, 8.38333
+Hagen, Nordrhein-Westfalen, DE, 50.83680, 7.28450
+Hamm, Nordrhein-Westfalen, DE, 50.76531, 7.67761
+Herne, Nordrhein-Westfalen, DE, 51.53880, 7.22572
+Iserlohn, Nordrhein-Westfalen, DE, 51.38333, 7.66667
+Köln, Nordrhein-Westfalen, DE, 50.94222, 6.95778
+Krefeld, Nordrhein-Westfalen, DE, 51.33333, 6.56667
+Leverkusen, Nordrhein-Westfalen, DE, 51.03333, 6.98333
+Moers, Nordrhein-Westfalen, DE, 51.45917, 6.61972
+Mönchengladbach, Nordrhein-Westfalen, DE, 51.20000, 6.43333
+Mülheim an der Ruhr, Nordrhein-Westfalen, DE, 51.42750, 6.88250
+Münster, Nordrhein-Westfalen, DE, 50.39030, 8.61687
+Neuss, Nordrhein-Westfalen, DE, 51.20028, 6.69389
+Oberhausen, Nordrhein-Westfalen, DE, 49.09889, 8.05778
+Paderborn, Nordrhein-Westfalen, DE, 51.71667, 8.76667
+Recklinghausen, Nordrhein-Westfalen, DE, 51.61667, 7.20000
+Remscheid, Nordrhein-Westfalen, DE, 51.17987, 7.19435
+Siegen, Nordrhein-Westfalen, DE, 50.87556, 8.01667
+Solingen, Nordrhein-Westfalen, DE, 51.17194, 7.08472
+Witten, Nordrhein-Westfalen, DE, 51.43333, 7.33333
+Wuppertal, Nordrhein-Westfalen, DE, 51.26667, 7.18333
+Kaiserslautern, Rheinland-Pfalz, DE, 49.44472, 7.76889
+Koblenz, Rheinland-Pfalz, DE, 50.35670, 7.59317
+Ludwigshafen am Rhein, Rheinland-Pfalz, DE, 49.48111, 8.43528
+Mainz, Rheinland-Pfalz, DE, 49.99944, 8.27361
+Saarbrücken, Saarland, DE, 49.25333, 6.85333
+Chemnitz, Sachsen, DE, 50.83333, 12.91667
+Dresden, Sachsen, DE, 54.14185, 12.08667
+Leipzig, Sachsen, DE, 51.35000, 12.38330
+Halle (Saale), Sachsen-Anhalt, DE, 51.48333, 11.96667
+Magdeburg, Sachsen-Anhalt, DE, 52.13333, 11.61667
+Kiel, Schleswig-Holstein, DE, 50.40810, 12.46970
+Lübeck, Schleswig-Holstein, DE, 53.86972, 10.68639
+Erfurt, Thüringen, DE, 50.97870, 11.03283
+Jena, Thüringen, DE, 50.92722, 11.58639
+Chambéry, Auvergne-Rhône-Alpes, FR, 45.56639, 5.92083
+Clermont-Ferrand, Auvergne-Rhône-Alpes, FR, 45.77972, 3.08694
+Grenoble, Auvergne-Rhône-Alpes, FR, 45.19080, 5.71470
+Lyon, Auvergne-Rhône-Alpes, FR, 45.76750, 4.83500
+Saint-Étienne, Auvergne-Rhône-Alpes, FR, 43.50269, -1.46246
+Vénissieux, Auvergne-Rhône-Alpes, FR, 45.70519, 4.88797
+Villeurbanne, Auvergne-Rhône-Alpes, FR, 45.75597, 4.89171
+Besançon, Bourgogne-Franche-Comté, FR, 47.24222, 6.02139
+Dijon, Bourgogne-Franche-Comté, FR, 47.32306, 5.04194
+Brest, Brittany, FR, 48.39000, -4.48694
+Rennes, Brittany, FR, 47.32472, 1.30472
+Saint-Brieuc, Brittany, FR, 48.51361, -2.76028
+Bourges, Centre-Val de Loire, FR, 47.09437, 2.39428
+Châteauroux, Centre-Val de Loire, FR, 46.80972, 1.69028
+Orléans, Centre-Val de Loire, FR, 47.90222, 1.90417
+Tours, Centre-Val de Loire, FR, 47.39278, 0.68833
+Ajaccio, Corsica, FR, 41.92556, 8.73639
+Cayenne, French Guiana, FR, 4.93861, -52.33500
+Metz, Grand Est, FR, 49.11972, 6.17694
+Mulhouse, Grand Est, FR, 47.74861, 7.33917
+Nancy, Grand Est, FR, 48.69278, 6.18361
+Reims, Grand Est, FR, 49.26528, 4.02861
+Strasbourg, Grand Est, FR, 48.86580, 2.32270
+Troyes, Grand Est, FR, 48.29589, 4.06479
+Amiens, Hauts-de-France, FR, 49.89194, 2.29778
+Beauvais, Hauts-de-France, FR, 49.43417, 2.08750
+Calais, Hauts-de-France, FR, 50.94750, 1.85556
+Dunkerque, Hauts-de-France, FR, 51.03778, 2.37639
+Lille, Hauts-de-France, FR, 50.63194, 3.05750
+Roubaix, Hauts-de-France, FR, 50.69000, 3.18167
+Saint-Quentin, Hauts-de-France, FR, 48.09004, 0.66744
+Tourcoing, Hauts-de-France, FR, 50.72250, 3.16028
+Antony, Île-de-France, FR, 48.75333, 2.29667
+Argenteuil, Île-de-France, FR, 48.94778, 2.24889
+Asnières-sur-Seine, Île-de-France, FR, 48.91111, 2.28556
+Aubervilliers, Île-de-France, FR, 48.91111, 2.38250
+Bondy, Île-de-France, FR, 48.89389, 2.47889
+Boulogne-Billancourt, Île-de-France, FR, 48.83528, 2.24139
+Cergy, Île-de-France, FR, 49.05222, 2.03611
+Champigny-sur-Marne, Île-de-France, FR, 48.81722, 2.51556
+Châtillon, Île-de-France, FR, 48.80111, 2.28861
+Chelles, Île-de-France, FR, 49.35278, 3.03444
+Clichy, Île-de-France, FR, 48.90361, 2.30556
+Colombes, Île-de-France, FR, 48.92361, 2.25222
+Courbevoie, Île-de-France, FR, 48.89841, 2.24853
+Créteil, Île-de-France, FR, 48.77778, 2.45306
+Drancy, Île-de-France, FR, 48.92333, 2.44500
+Épinay-sur-Seine, Île-de-France, FR, 48.95472, 2.30833
+Évry, Île-de-France, FR, 48.62389, 2.42944
+Issy-les-Moulineaux, Île-de-France, FR, 48.82306, 2.26917
+Ivry-sur-Seine, Île-de-France, FR, 48.81417, 2.39111
+Le Blanc-Mesnil, Île-de-France, FR, 48.93222, 2.47611
+Levallois-Perret, Île-de-France, FR, 48.89333, 2.28778
+Maisons-Alfort, Île-de-France, FR, 48.80583, 2.43778
+Montreuil, Île-de-France, FR, 46.40806, -0.83750
+Nanterre, Île-de-France, FR, 48.89056, 2.20361
+Neuilly-sur-Seine, Île-de-France, FR, 48.88722, 2.26750
+Noisy-le-Grand, Île-de-France, FR, 48.84389, 2.55806
+Paris, Île-de-France, FR, 48.85667, 2.35222
+Rueil-Malmaison, Île-de-France, FR, 48.88722, 2.17139
+Saint-Denis, Île-de-France, FR, 48.93500, 2.34528
+Sarcelles, Île-de-France, FR, 48.99722, 2.37806
+Versailles, Île-de-France, FR, 48.80500, 2.13500
+Villejuif, Île-de-France, FR, 48.79389, 2.36111
+Vitry-sur-Seine, Île-de-France, FR, 48.80056, 2.40222
+Caen, Normandy, FR, 49.18139, -0.36361
+Le Havre, Normandy, FR, 49.49417, 0.10806
+Rouen, Normandy, FR, 49.44306, 1.10250
+Bordeaux, Nouvelle-Aquitaine, FR, 44.83778, -0.57944
+La Rochelle, Nouvelle-Aquitaine, FR, 47.74639, 5.73222
+Limoges, Nouvelle-Aquitaine, FR, 45.83444, 1.26167
+Mérignac, Nouvelle-Aquitaine, FR, 44.83250, -0.63389
+Pau, Nouvelle-Aquitaine, FR, 43.30083, -0.37000
+Pessac, Nouvelle-Aquitaine, FR, 44.80583, -0.63222
+Poitiers, Nouvelle-Aquitaine, FR, 46.58222, 0.33306
+Albi, Occitanie, FR, 43.92806, 2.14583
+Béziers, Occitanie, FR, 43.33611, 3.21867
+Montpellier, Occitanie, FR, 43.61092, 3.87723
+Nîmes, Occitanie, FR, 43.83833, 4.35972
+Perpignan, Occitanie, FR, 42.69626, 2.87973
+Sète, Occitanie, FR, 43.41283, 3.69649
+Toulouse, Occitanie, FR, 43.60444, 1.44333
+Angers, Pays de la Loire, FR, 47.46667, -0.55000
+Cholet, Pays de la Loire, FR, 47.05889, -0.87972
+Le Mans, Pays de la Loire, FR, 48.00417, 0.19694
+Nantes, Pays de la Loire, FR, 47.21722, -1.55389
+Aix-en-Provence, Provence-Alpes-Côte d'Azur, FR, 43.52317, 5.44512
+Antibes, Provence-Alpes-Côte d'Azur, FR, 43.58000, 7.12306
+Avignon, Provence-Alpes-Côte d'Azur, FR, 43.94861, 4.80833
+Cannes, Provence-Alpes-Côte d'Azur, FR, 43.55250, 7.02139
+Hyères, Provence-Alpes-Côte d'Azur, FR, 48.21889, -3.70361
+La Seyne-sur-Mer, Provence-Alpes-Côte d'Azur, FR, 43.10306, 5.87833
+Marseille, Provence-Alpes-Côte d'Azur, FR, 43.29667, 5.37639
+Nice, Provence-Alpes-Côte d'Azur, FR, 43.70194, 7.26833
+Toulon, Provence-Alpes-Côte d'Azur, FR, 43.12500, 5.93056
+Saint-André, Réunion, FR, 45.51260, 2.93409
+Saint-Denis, Réunion, FR, 48.93500, 2.34528
+Saint-Paul, Réunion, FR, 46.40284, 2.03653
+Saint-Pierre, Réunion, FR, 46.81889, -56.34389
+Pescara, Abruzzo, IT, 41.51599, 13.53780
+Matera, Basilicata, IT, 40.66667, 16.60000
+Potenza, Basilicata, IT, 43.28614, 13.35054
+Cosenza, Calabria, IT, 39.30000, 16.25000
+Lamezia Terme, Calabria, IT, 38.96667, 16.30000
+Reggio Calabria, Calabria, IT, 38.11444, 15.65000
+Acerra, Campania, IT, 40.94730, 14.38260
+Aversa, Campania, IT, 40.97303, 14.20647
+Castellammare di Stabia, Campania, IT, 40.69472, 14.48028
+Cava de' Tirreni, Campania, IT, 40.70083, 14.70556
+Ercolano, Campania, IT, 40.80679, 14.35261
+Giugliano in Campania, Campania, IT, 40.93188, 14.19557
+Napoli, Campania, IT, 40.83583, 14.24861
+Pozzuoli, Campania, IT, 40.82883, 14.11765
+Salerno, Campania, IT, 40.67545, 14.79328
+Bologna, Emilia-Romagna, IT, 44.89688, 11.98523
+Cesena, Emilia-Romagna, IT, 44.13333, 12.23333
+Ferrara, Emilia-Romagna, IT, 44.83917, 11.61750
+Forlì, Emilia-Romagna, IT, 44.22389, 12.05472
+Imola, Emilia-Romagna, IT, 44.35917, 11.71333
+Modena, Emilia-Romagna, IT, 44.64582, 10.92572
+Piacenza, Emilia-Romagna, IT, 45.05000, 9.70000
+Ravenna, Emilia-Romagna, IT, 44.41572, 12.19660
+Reggio Emilia, Emilia-Romagna, IT, 44.70000, 10.63333
+Rimini, Emilia-Romagna, IT, 44.05944, 12.56833
+Pordenone, Friuli-Venezia Giulia, IT, 45.79702, 12.61067
+Trieste, Friuli-Venezia Giulia, IT, 45.65028, 13.77028
+Aprilia, Lazio, IT, 41.58333, 12.65000
+Civitavecchia, Lazio, IT, 41.64915, 13.61773
+Latina, Lazio, IT, 41.46722, 12.90361
+Pomezia, Lazio, IT, 41.66931, 12.50208
+Roma, Lazio, IT, 44.99364, 11.10642
+Velletri, Lazio, IT, 41.68220, 12.78100
+Viterbo, Lazio, IT, 42.41937, 12.10560
+Genova, Liguria, IT, 45.21604, 11.87211
+La Spezia, Liguria, IT, 44.10300, 9.82375
+Savona, Liguria, IT, 44.30806, 8.48111
+Bergamo, Lombardia, IT, 45.69056, 9.67500
+Brescia, Lombardia, IT, 45.53889, 10.21944
+Cinisello Balsamo, Lombardia, IT, 45.55000, 9.21667
+Como, Lombardia, IT, 45.81025, 9.08614
+Cremona, Lombardia, IT, 45.13333, 10.02472
+Legnano, Lombardia, IT, 45.59361, 8.91083
+Lodi, Lombardia, IT, 45.30989, 9.50085
+Milano, Lombardia, IT, 42.78235, 12.59836
+Monza, Lombardia, IT, 45.57778, 9.27306
+Rho, Lombardia, IT, 45.52417, 9.04333
+Sesto San Giovanni, Lombardia, IT, 45.53282, 9.23091
+Varese, Lombardia, IT, 45.81667, 8.83333
+Fano, Marche, IT, 43.84052, 13.01665
+Pesaro, Marche, IT, 43.91015, 12.91330
+Alessandria, Piemonte, IT, 44.91333, 8.62000
+Asti, Piemonte, IT, 44.90162, 8.20751
+Biella, Piemonte, IT, 45.56181, 8.05619
+Novara, Piemonte, IT, 45.08837, 7.69123
+Torino, Piemonte, IT, 45.05000, 7.66667
+Vercelli, Piemonte, IT, 45.32615, 8.42341
+Altamura, Puglia, IT, 40.83750, 16.55170
+Andria, Puglia, IT, 41.23167, 16.30833
+Bari, Puglia, IT, 45.61379, 9.91243
+Barletta, Puglia, IT, 41.31667, 16.28333
+Foggia, Puglia, IT, 41.46556, 15.55611
+Lecce, Puglia, IT, 40.35201, 18.16914
+Taranto, Puglia, IT, 40.47111, 17.24306
+Cagliari, Sardegna, IT, 39.21667, 9.11667
+Sassari, Sardegna, IT, 40.72667, 8.55917
+Agrigento, Sicilia, IT, 37.31250, 13.57500
+Catania, Sicilia, IT, 37.50267, 15.08727
+Marsala, Sicilia, IT, 37.79920, 12.43670
+Messina, Sicilia, IT, 38.19361, 15.55417
+Palermo, Sicilia, IT, 38.11688, 13.35672
+Ragusa, Sicilia, IT, 36.91920, 14.72560
+Siracusa, Sicilia, IT, 37.08515, 15.27300
+Trapani, Sicilia, IT, 45.06460, 7.63704
+Arezzo, Toscana, IT, 43.46306, 11.87806
+Carrara, Toscana, IT, 44.08333, 10.10000
+Firenze, Toscana, IT, 43.77139, 11.25417
+Grosseto, Toscana, IT, 42.77222, 11.10889
+Livorno, Toscana, IT, 43.55000, 10.31667
+Lucca, Toscana, IT, 43.85000, 10.51667
+Massa, Toscana, IT, 43.54285, 11.44358
+Prato, Toscana, IT, 42.76256, 12.22127
+Bolzano, Trentino-Alto Adige, IT, 46.49811, 11.35478
+Trento, Trentino-Alto Adige, IT, 45.64769, 11.68986
+Foligno, Umbria, IT, 42.95611, 12.70333
+Perugia, Umbria, IT, 43.11220, 12.38878
+Terni, Umbria, IT, 42.56667, 12.65000
+Padova, Veneto, IT, 44.38225, 11.14261
+Rovigo, Veneto, IT, 45.08090, 11.79400
+Venezia, Veneto, IT, 41.60665, 13.96034
+Verona, Veneto, IT, 45.76965, 12.68541
+Vicenza, Veneto, IT, 45.55000, 11.55000

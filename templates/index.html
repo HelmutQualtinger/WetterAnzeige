@@ -257,7 +257,7 @@
                 data-highlights='[ {"from": -20, "to": 0, "color": "rgba(59, 130, 246, 0.3)"},
                                    {"from": 0, "to": 30, "color": "rgba(34, 197, 94, 0.3)"},
                                    {"from": 30, "to": 40, "color": "rgba(239, 68, 68, 0.3)"} ]'
-                data-color-plate="#1e293b"
+                data-color-plate="#ffffff"
                 data-border-shadow-width="0"
                 data-borders="false"
                 data-needle-type="arrow"
@@ -288,7 +288,7 @@
                 data-highlights='[
                     {"from": 0, "to": 100, "color": "rgba(59, 130, 246, 0.2)"}
                 ]'
-                data-color-plate="#1e293b"
+                data-color-plate="#ffffff"
                 data-border-shadow-width="0"
                 data-borders="false"
                 data-needle-type="line"
@@ -315,7 +315,7 @@
                 data-minor-ticks="2"
                 data-stroke-ticks="true"
                 data-highlights='[]'
-                data-color-plate="#1e293b"
+                data-color-plate="#ffffff"
                 data-border-shadow-width="0"
                 data-borders="false"
                 data-needle-type="arrow"
@@ -344,10 +344,68 @@
                 data-highlights='[
                     {"from": 0, "to": 30, "color": "rgba(239, 68, 68, 0.2)"}
                 ]'
-                data-color-plate="#1e293b"
+                data-color-plate="#ffffff"
                 data-border-shadow-width="0"
                 data-borders="false"
                 data-needle-type="arrow"
+                data-needle-width="3"
+                data-needle-circle-size="8"
+                data-needle-circle-outer="true"
+                data-needle-circle-inner="false"
+                data-animation-duration="1500"
+                data-animation-rule="linear"
+                data-value="0"
+            ></canvas>
+        </div>
+
+        <!-- Niederschlag (1h) -->
+        <div class="card">
+            <h3>Niederschlag (1h)</h3>
+            <canvas id="rain-gauge" data-type="radial-gauge"
+                data-width="270"
+                data-height="270"
+                data-units="mm"
+                data-min-value="0"
+                data-max-value="20"
+                data-major-ticks="0,5,10,15,20"
+                data-minor-ticks="2"
+                data-stroke-ticks="true"
+                data-highlights='[
+                    {"from": 0, "to": 20, "color": "rgba(59, 130, 246, 0.2)"}
+                ]'
+                data-color-plate="#ffffff"
+                data-border-shadow-width="0"
+                data-borders="false"
+                data-needle-type="arrow"
+                data-needle-width="3"
+                data-needle-circle-size="8"
+                data-needle-circle-outer="true"
+                data-needle-circle-inner="false"
+                data-animation-duration="1500"
+                data-animation-rule="linear"
+                data-value="0"
+            ></canvas>
+        </div>
+
+        <!-- Bewölkung -->
+        <div class="card">
+            <h3>Bewölkung</h3>
+            <canvas id="cloud-gauge" data-type="radial-gauge"
+                data-width="270"
+                data-height="270"
+                data-units="%"
+                data-min-value="0"
+                data-max-value="100"
+                data-major-ticks="0,25,50,75,100"
+                data-minor-ticks="2"
+                data-stroke-ticks="true"
+                data-highlights='[
+                    {"from": 0, "to": 100, "color": "rgba(148, 163, 184, 0.2)"}
+                ]'
+                data-color-plate="#ffffff"
+                data-border-shadow-width="0"
+                data-borders="false"
+                data-needle-type="line"
                 data-needle-width="3"
                 data-needle-circle-size="8"
                 data-needle-circle-outer="true"
@@ -378,14 +436,15 @@
         // Update gauge colors based on theme
         function updateGaugeColors() {
             const isLight = root.classList.contains('light-mode');
-            const plateColor = isLight ? '#ffffff' : '#1e293b';
+            const plateColor = '#ffffff';
             const textColor = isLight ? '#1e293b' : '#f1f5f9';
 
             // Update all gauges
-            document.getElementById('temp-gauge').setAttribute('data-color-plate', plateColor);
-            document.getElementById('humidity-gauge').setAttribute('data-color-plate', plateColor);
-            document.getElementById('pressure-gauge').setAttribute('data-color-plate', plateColor);
-            document.getElementById('wind-gauge').setAttribute('data-color-plate', plateColor);
+            const gaugeIds = ['temp-gauge', 'humidity-gauge', 'pressure-gauge', 'wind-gauge', 'rain-gauge', 'cloud-gauge'];
+            gaugeIds.forEach(id => {
+                const el = document.getElementById(id);
+                if(el) el.setAttribute('data-color-plate', plateColor);
+            });
 
             // Redraw gauges
             gaugeObjects.forEach(gauge => {
@@ -580,14 +639,14 @@
                 weatherIcon.textContent = iconEmoji;
                 weatherMainText.textContent = data.weather_main || '—';
                 console.log('Weather data received:', data);
-                console.log('Weather main:', data.weather_main);
-                console.log('Icon set to:', iconEmoji);
 
                 // Update Gauges
                 document.getElementById('temp-gauge').setAttribute('data-value', data.temperature || 0);
                 document.getElementById('humidity-gauge').setAttribute('data-value', data.humidity || 0);
                 document.getElementById('pressure-gauge').setAttribute('data-value', data.pressure || 1013);
                 document.getElementById('wind-gauge').setAttribute('data-value', data.wind_speed || 0);
+                document.getElementById('rain-gauge').setAttribute('data-value', data.rain_down_1h || 0);
+                document.getElementById('cloud-gauge').setAttribute('data-value', data.clouds || 0);
 
                 // Update Timestamp
                 let displayDate = data.dt;
@@ -606,7 +665,9 @@
                         Gauge.gauges.find(g => g.canvas && g.canvas.id === 'temp-gauge'),
                         Gauge.gauges.find(g => g.canvas && g.canvas.id === 'humidity-gauge'),
                         Gauge.gauges.find(g => g.canvas && g.canvas.id === 'pressure-gauge'),
-                        Gauge.gauges.find(g => g.canvas && g.canvas.id === 'wind-gauge')
+                        Gauge.gauges.find(g => g.canvas && g.canvas.id === 'wind-gauge'),
+                        Gauge.gauges.find(g => g.canvas && g.canvas.id === 'rain-gauge'),
+                        Gauge.gauges.find(g => g.canvas && g.canvas.id === 'cloud-gauge')
                     ];
                 }
 
