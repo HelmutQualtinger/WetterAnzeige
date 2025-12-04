@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wetterstation Feldkirch</title>
+    <!-- Canvas Gauges CDN -->
+    <script src="https://cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/all/gauge.min.js"></script>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #3b82f6;
+            --accent-color: #06b6d4;
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --menu-bg: #1e293b;
+        }
+
+        :root.light-mode {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #0ea5e9;
+            --accent-color: #06b6d4;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --menu-bg: #f1f5f9;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1 {
+            color: var(--text-color);
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        #weather-icon {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-weight: 300;
+            color: var(--text-secondary);
+            margin-top: 0;
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            letter-spacing: 0.5px;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max_width: 1200px;
+            justify-items: center;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 320px;
+            transition: transform 0.2s, box-shadow 0.3s, background-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        canvas[data-type="linear-gauge"],
+        canvas[data-type="radial-gauge"] {
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+        }
+
+        .timestamp {
+            margin-top: 40px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            letter-spacing: 0.3px;
+        }
+
+        /* Location Menu */
+        .location-menu {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: var(--menu-bg);
+            border-radius: 10px;
+            max-width: 1200px;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .menu-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .menu-group label {
+            font-size: 0.85rem;
+            color: var(--text-color);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .menu-group select {
+            padding: 12px 14px;
+            border: 2px solid var(--accent-color);
+            border-radius: 8px;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-size: 1rem;
+            font-family: var(--font-main);
+            cursor: pointer;
+            transition: all 0.2s;
+            min-width: 180px;
+        }
+
+        .menu-group select:hover {
+            border-color: var(--text-color);
+        }
+
+        .menu-group select:focus {
+            outline: none;
+            border-color: var(--text-color);
+            box-shadow: 0 0 8px rgba(233, 69, 96, 0.3);
+        }
+
+        .menu-group select:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Theme Toggle Button */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--card-bg);
+            border: 2px solid var(--accent-color);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            z-index: 100;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+        }
+
+        /* Loading Overlay */
+        #loading {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="loading">Lade Wetterdaten...</div>
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+    <h1><span id="weather-icon">☀️</span>Wetter Dashboard</h1>
+    <h2 id="location-title">Feldkirch, Vorarlberg, Österreich</h2>
+    <div style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 30px; min-height: 1.5rem;">
+        <span id="weather-main">—</span>
+    </div>
+
+    <div class="location-menu">
+        <div class="menu-group">
+            <label for="country-select">Land</label>
+            <select id="country-select">
+                <option value="">-- Wähle ein Land --</option>
+            </select>
+        </div>
+        <div class="menu-group">
+            <label for="canton-select">Kanton</label>
+            <select id="canton-select" disabled>
+                <option value="">-- Wähle einen Kanton --</option>
+            </select>
+        </div>
+        <div class="menu-group">
+            <label for="city-select">Stadt</label>
+            <select id="city-select" disabled>
+                <option value="">-- Wähle eine Stadt --</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="dashboard-grid">
+        <!-- Temperatur -->
+        <div class="card">
+            <h3>Temperatur</h3>
+            <canvas id="temp-gauge" data-type="linear-gauge"
+                data-width="140"
+                data-height="320"
+                data-units="°C"
+                data-min-value="-20"
+                data-max-value="40"
+                data-major-ticks="-20,-10,0,10,20,30,40"
+                data-minor-ticks="2"
+                data-stroke-ticks="true"
+                data-highlights='[ {"from": -20, "to": 0, "color": "rgba(59, 130, 246, 0.3)"},
+                                   {"from": 0, "to": 30, "color": "rgba(34, 197, 94, 0.3)"},
+                                   {"from": 30, "to": 40, "color": "rgba(239, 68, 68, 0.3)"} ]'
+                data-color-plate="#1e293b"
+                data-border-shadow-width="0"
+                data-borders="false"
+                data-needle-type="arrow"
+                data-needle-width="3"
+                data-needle-circle-size="8"
+                data-needle-circle-outer="true"
+                data-needle-circle-inner="false"
+                data-animation-duration="1500"
+                data-animation-rule="linear"
+                data-bar-begin-circle="false"
+                data-font-size-units="px"
+                data-value="0"
+            ></canvas>
+        </div>
+
+        <!-- Luftfeuchtigkeit -->
+        <div class="card">
+            <h3>Luftfeuchtigkeit</h3>
+            <canvas id="humidity-gauge" data-type="radial-gauge"
+                data-width="270"
+                data-height="270"
+                data-units="%"
+                data-min-value="0"
+                data-max-value="100"
+                data-major-ticks="0,10,20,30,40,50,60,70,80,90,100"
+                data-minor-ticks="2"
+                data-stroke-ticks="true"
+                data-highlights='[
+                    {"from": 0, "to": 100, "color": "rgba(59, 130, 246, 0.2)"}
+                ]'
+                data-color-plate="#1e293b"
+                data-border-shadow-width="0"
+                data-borders="false"
+                data-needle-type="line"
+                data-needle-width="3"
+                data-needle-circle-size="8"
+                data-needle-circle-outer="true"
+                data-needle-circle-inner="false"
+                data-animation-duration="1500"
+                data-animation-rule="linear"
+                data-value="0"
+            ></canvas>
+        </div>
+
+        <!-- Luftdruck -->
+        <div class="card">
+            <h3>Luftdruck</h3>
+            <canvas id="pressure-gauge" data-type="radial-gauge"
+                data-width="270"
+                data-height="270"
+                data-units="hPa"
+                data-min-value="950"
+                data-max-value="1050"
+                data-major-ticks="950,970,990,1010,1030,1050"
+                data-minor-ticks="2"
+                data-stroke-ticks="true"
+                data-highlights='[]'
+                data-color-plate="#1e293b"
+                data-border-shadow-width="0"
+                data-borders="false"
+                data-needle-type="arrow"
+                data-needle-width="3"
+                data-needle-circle-size="8"
+                data-needle-circle-outer="true"
+                data-needle-circle-inner="false"
+                data-animation-duration="1500"
+                data-animation-rule="linear"
+                data-value="1013"
+            ></canvas>
+        </div>
+
+        <!-- Windgeschwindigkeit -->
+        <div class="card">
+            <h3>Wind</h3>
+            <canvas id="wind-gauge" data-type="radial-gauge"
+                data-width="270"
+                data-height="270"
+                data-units="m/s"
+                data-min-value="0"
+                data-max-value="30"
+                data-major-ticks="0,5,10,15,20,25,30"
+                data-minor-ticks="2"
+                data-stroke-ticks="true"
+                data-highlights='[
+                    {"from": 0, "to": 30, "color": "rgba(239, 68, 68, 0.2)"}
+                ]'
+                data-color-plate="#1e293b"
+                data-border-shadow-width="0"
+                data-borders="false"
+                data-needle-type="arrow"
+                data-needle-width="3"
+                data-needle-circle-size="8"
+                data-needle-circle-outer="true"
+                data-needle-circle-inner="false"
+                data-animation-duration="1500"
+                data-animation-rule="linear"
+                data-value="0"
+            ></canvas>
+        </div>
+    </div>
+
+    <div class="timestamp" id="last-update">Noch keine Daten</div>
+
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+
+        // Initialize theme from localStorage
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        if (savedTheme === 'light') {
+            root.classList.add('light-mode');
+            themeToggle.textContent = '🌙';
+        } else {
+            themeToggle.textContent = '☀️';
+        }
+
+        // Update gauge colors based on theme
+        function updateGaugeColors() {
+            const isLight = root.classList.contains('light-mode');
+            const plateColor = isLight ? '#ffffff' : '#1e293b';
+            const textColor = isLight ? '#1e293b' : '#f1f5f9';
+
+            // Update all gauges
+            document.getElementById('temp-gauge').setAttribute('data-color-plate', plateColor);
+            document.getElementById('humidity-gauge').setAttribute('data-color-plate', plateColor);
+            document.getElementById('pressure-gauge').setAttribute('data-color-plate', plateColor);
+            document.getElementById('wind-gauge').setAttribute('data-color-plate', plateColor);
+
+            // Redraw gauges
+            gaugeObjects.forEach(gauge => {
+                if (gauge && typeof gauge.update === 'function') {
+                    gauge.update();
+                }
+            });
+        }
+
+        // Store gauge objects for later reference
+        let gaugeObjects = [];
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            root.classList.toggle('light-mode');
+            const isLight = root.classList.contains('light-mode');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+            themeToggle.textContent = isLight ? '🌙' : '☀️';
+            updateGaugeColors();
+        });
+
+        // Get DOM elements
+        const countrySelect = document.getElementById('country-select');
+        const cantonSelect = document.getElementById('canton-select');
+        const citySelect = document.getElementById('city-select');
+        const locationTitle = document.getElementById('location-title');
+        const weatherIcon = document.getElementById('weather-icon');
+        const weatherMainText = document.getElementById('weather-main');
+
+        // Initialize menu with default values
+        let currentCountry = 'AT';
+        let currentCanton = 'Vorarlberg';
+        let currentCity = 'Feldkirch';
+
+        // Map weather conditions to emoji icons (German and English)
+        function getWeatherIcon(weatherMain) {
+            if (!weatherMain) return '🌤️';
+            const text = weatherMain.toLowerCase();
+
+            // German weather conditions
+            if (text.includes('gewitter')) return '⛈️';
+            if (text.includes('niesel') || text.includes('drizzle')) return '🌦️';
+            if (text.includes('regen') || text.includes('rain') || text.includes('shower')) return '🌧️';
+            if (text.includes('schnee') || text.includes('snow')) return '❄️';
+            if (text.includes('nebel') || text.includes('fog') || text.includes('mist')) return '🌫️';
+            if (text.includes('sturm') || text.includes('squall') || text.includes('tornado')) return '🌪️';
+            if (text.includes('klarer') || text.includes('clear')) return '☀️';
+            if (text.includes('bedeckt') || text.includes('clouds') || text.includes('bewölkt')) return '☁️';
+            if (text.includes('trüb') || text.includes('haze')) return '🌫️';
+
+            // Fallback
+            return '🌤️';
+        }
+
+        // Load countries on page load
+        async function loadCountries() {
+            try {
+                const response = await fetch('/api/countries');
+                const countries = await response.json();
+
+                countries.forEach(country => {
+                    const option = document.createElement('option');
+                    option.value = country;
+                    option.textContent = country;
+                    countrySelect.appendChild(option);
+                });
+
+                // Set default country
+                countrySelect.value = currentCountry;
+                // Trigger loading cantons for default country
+                await loadCantons();
+            } catch (error) {
+                console.error('Error loading countries:', error);
+            }
+        }
+
+        // Load cantons for selected country
+        async function loadCantons() {
+            const country = countrySelect.value;
+            if (!country) return;
+
+            currentCountry = country;
+
+            // Clear and reset canton select
+            cantonSelect.innerHTML = '<option value="">-- Wähle einen Kanton --</option>';
+            cantonSelect.disabled = true;
+
+            // Clear and reset city select
+            citySelect.innerHTML = '<option value="">-- Wähle eine Stadt --</option>';
+            citySelect.disabled = true;
+
+            try {
+                const response = await fetch(`/api/cantons?country=${encodeURIComponent(country)}`);
+                const cantons = await response.json();
+
+                if (cantons.length > 0) {
+                    cantons.forEach(canton => {
+                        const option = document.createElement('option');
+                        option.value = canton;
+                        option.textContent = canton;
+                        cantonSelect.appendChild(option);
+                    });
+                    cantonSelect.disabled = false;
+
+                    // Set default canton if it exists
+                    if (cantons.includes(currentCanton)) {
+                        cantonSelect.value = currentCanton;
+                        await loadCities();
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading cantons:', error);
+            }
+        }
+
+        // Load cities for selected country and canton
+        async function loadCities() {
+            const country = countrySelect.value;
+            const canton = cantonSelect.value;
+
+            if (!country || !canton) return;
+
+            currentCanton = canton;
+
+            // Clear and reset city select
+            citySelect.innerHTML = '<option value="">-- Wähle eine Stadt --</option>';
+            citySelect.disabled = true;
+
+            try {
+                const response = await fetch(`/api/cities?country=${encodeURIComponent(country)}&canton=${encodeURIComponent(canton)}`);
+                const cities = await response.json();
+
+                if (cities.length > 0) {
+                    cities.forEach(city => {
+                        const option = document.createElement('option');
+                        option.value = city;
+                        option.textContent = city;
+                        citySelect.appendChild(option);
+                    });
+                    citySelect.disabled = false;
+
+                    // Set default city if it exists
+                    if (cities.includes(currentCity)) {
+                        citySelect.value = currentCity;
+                        await fetchWeatherData();
+                    } else if (cities.length > 0) {
+                        // Select first city if default doesn't exist
+                        citySelect.value = cities[0];
+                        await fetchWeatherData();
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading cities:', error);
+            }
+        }
+
+        // Fetch weather data for selected location
+        async function fetchWeatherData() {
+            const country = countrySelect.value;
+            const canton = cantonSelect.value;
+            const city = citySelect.value;
+
+            if (!country || !canton || !city) {
+                document.getElementById('loading').style.display = 'none';
+                return;
+            }
+
+            currentCity = city;
+            document.getElementById('loading').style.display = 'flex';
+
+            try {
+                const params = new URLSearchParams({
+                    country: country,
+                    canton: canton,
+                    city: city
+                });
+
+                const response = await fetch(`/api/weather?${params}`);
+                const data = await response.json();
+
+                if (data.error) {
+                    console.error("API Error:", data.error);
+                    document.getElementById('loading').innerText = "Fehler: " + data.error;
+                    return;
+                }
+
+                // Update location title
+                locationTitle.textContent = `${city}, ${canton}, ${country}`;
+
+                // Update weather icon and text based on weather_main
+                const iconEmoji = data.weather_main ? getWeatherIcon(data.weather_main) : '🌤️';
+                weatherIcon.textContent = iconEmoji;
+                weatherMainText.textContent = data.weather_main || '—';
+                console.log('Weather data received:', data);
+                console.log('Weather main:', data.weather_main);
+                console.log('Icon set to:', iconEmoji);
+
+                // Update Gauges
+                document.getElementById('temp-gauge').setAttribute('data-value', data.temperature || 0);
+                document.getElementById('humidity-gauge').setAttribute('data-value', data.humidity || 0);
+                document.getElementById('pressure-gauge').setAttribute('data-value', data.pressure || 1013);
+                document.getElementById('wind-gauge').setAttribute('data-value', data.wind_speed || 0);
+
+                // Update Timestamp
+                let displayDate = data.dt;
+                if (typeof data.dt === 'number') {
+                     displayDate = new Date(data.dt * 1000).toLocaleString('de-DE');
+                } else {
+                     displayDate = new Date(data.dt).toLocaleString('de-DE');
+                }
+
+                document.getElementById('last-update').innerText = 'Letztes Update: ' + displayDate;
+                document.getElementById('loading').style.display = 'none';
+
+                // Store gauge objects for theme switching
+                if (window.GaugeClass) {
+                    gaugeObjects = [
+                        Gauge.gauges.find(g => g.canvas && g.canvas.id === 'temp-gauge'),
+                        Gauge.gauges.find(g => g.canvas && g.canvas.id === 'humidity-gauge'),
+                        Gauge.gauges.find(g => g.canvas && g.canvas.id === 'pressure-gauge'),
+                        Gauge.gauges.find(g => g.canvas && g.canvas.id === 'wind-gauge')
+                    ];
+                }
+
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                document.getElementById('loading').innerText = "Fehler beim Laden";
+            }
+        }
+
+        // Event listeners for dropdowns
+        countrySelect.addEventListener('change', loadCantons);
+        cantonSelect.addEventListener('change', loadCities);
+        citySelect.addEventListener('change', fetchWeatherData);
+
+        // Initial load
+        window.addEventListener('load', loadCountries);
+
+        // Refresh every 5 minutes (only reload weather, not entire menu)
+        setInterval(() => {
+            const country = countrySelect.value;
+            const canton = cantonSelect.value;
+            const city = citySelect.value;
+            if (country && canton && city) {
+                fetchWeatherData();
+            }
+        }, 300000);
+    </script>
+</body>
+</html>
