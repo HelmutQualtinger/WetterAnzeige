@@ -33,7 +33,7 @@
             background-color: var(--bg-color);
             color: var(--text-primary);
             margin: 0;
-            padding: 20px;
+            padding: 5px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -43,16 +43,16 @@
         h1 {
             color: var(--text-color);
             text-align: center;
-            margin-bottom: 10px;
-            font-size: 2.5rem;
+            margin-bottom: 2px;
+            font-size: 2rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 15px;
+            gap: 10px;
         }
 
         #weather-icon {
-            font-size: 3rem;
+            font-size: 2.2rem;
         }
 
         h2 {
@@ -60,15 +60,15 @@
             color: var(--text-secondary);
             margin-top: 0;
             text-align: center;
-            font-size: 1.3rem;
-            margin-bottom: 40px;
+            font-size: 1rem;
+            margin-bottom: 15px;
             letter-spacing: 0.5px;
         }
 
         .dashboard-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
             width: 100%;
             max_width: 1200px;
             justify-items: center;
@@ -76,52 +76,52 @@
 
         .card {
             background-color: var(--card-bg);
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100%;
-            max-width: 320px;
+            max-width: 220px;
             transition: transform 0.2s, box-shadow 0.3s, background-color 0.3s;
         }
 
         .card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-3px);
         }
 
         .card h3 {
             margin-top: 0;
             color: var(--text-primary);
-            margin-bottom: 20px;
-            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-size: 1rem;
             font-weight: 600;
             letter-spacing: 0.3px;
         }
 
         canvas[data-type="linear-gauge"],
         canvas[data-type="radial-gauge"] {
-            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
         }
 
         .timestamp {
-            margin-top: 40px;
+            margin-top: 20px;
             color: var(--text-secondary);
-            font-size: 0.95rem;
+            font-size: 0.8rem;
             letter-spacing: 0.3px;
         }
 
         /* Location Menu */
         .location-menu {
             display: flex;
-            gap: 15px;
+            gap: 8px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-bottom: 40px;
-            padding: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
             background-color: var(--menu-bg);
-            border-radius: 10px;
+            border-radius: 8px;
             max-width: 1200px;
             width: 100%;
             transition: background-color 0.3s;
@@ -130,11 +130,11 @@
         .menu-group {
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 4px;
         }
 
         .menu-group label {
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             color: var(--text-color);
             font-weight: 700;
             text-transform: uppercase;
@@ -142,26 +142,26 @@
         }
 
         .menu-group select {
-            padding: 12px 14px;
-            border: 2px solid var(--accent-color);
-            border-radius: 8px;
+            padding: 6px 8px;
+            border: 1px solid var(--accent-color);
+            border-radius: 6px;
             background-color: var(--bg-color);
             color: var(--text-primary);
-            font-size: 1rem;
+            font-size: 0.8rem;
             font-family: var(--font-main);
             cursor: pointer;
             transition: all 0.2s;
-            min-width: 180px;
+            min-width: 140px;
         }
 
         .menu-group select:hover {
             border-color: var(--text-color);
         }
-
+        
         .menu-group select:focus {
             outline: none;
             border-color: var(--text-color);
-            box-shadow: 0 0 8px rgba(233, 69, 96, 0.3);
+            box-shadow: 0 0 6px rgba(233, 69, 96, 0.3);
         }
 
         .menu-group select:disabled {
@@ -172,14 +172,14 @@
         /* Theme Toggle Button */
         .theme-toggle {
             position: fixed;
-            top: 20px;
-            right: 20px;
+            top: 10px;
+            right: 10px;
             background: var(--card-bg);
-            border: 2px solid var(--accent-color);
+            border: 1px solid var(--accent-color);
             border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            font-size: 1.5rem;
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -190,7 +190,7 @@
 
         .theme-toggle:hover {
             transform: scale(1.1);
-            box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+            box-shadow: 0 0 12px rgba(6, 182, 212, 0.3);
         }
 
         /* Loading Overlay */
@@ -203,7 +203,7 @@
             align-items: center;
             z-index: 1000;
             color: white;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
 
     </style>
@@ -215,10 +215,6 @@
     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
 
     <h1><span id="weather-icon">☀️</span>Wetter Dashboard</h1>
-    <h2 id="location-title">Feldkirch, Vorarlberg, Österreich</h2>
-    <div style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 30px; min-height: 1.5rem;">
-        <span id="weather-main">—</span>
-    </div>
 
     <div class="location-menu">
         <div class="menu-group">
@@ -246,8 +242,8 @@
         <div class="card">
             <h3>Temperatur</h3>
             <canvas id="temp-gauge" data-type="linear-gauge"
-                data-width="140"
-                data-height="320"
+                data-width="100"
+                data-height="240"
                 data-units="°C"
                 data-min-value="-20"
                 data-max-value="40"
@@ -261,8 +257,8 @@
                 data-border-shadow-width="0"
                 data-borders="false"
                 data-needle-type="arrow"
-                data-needle-width="3"
-                data-needle-circle-size="8"
+                data-needle-width="2"
+                data-needle-circle-size="7"
                 data-needle-circle-outer="true"
                 data-needle-circle-inner="false"
                 data-animation-duration="1500"
@@ -277,8 +273,8 @@
         <div class="card">
             <h3>Luftfeuchtigkeit</h3>
             <canvas id="humidity-gauge" data-type="radial-gauge"
-                data-width="270"
-                data-height="270"
+                data-width="180"
+                data-height="180"
                 data-units="%"
                 data-min-value="0"
                 data-max-value="100"
@@ -292,8 +288,8 @@
                 data-border-shadow-width="0"
                 data-borders="false"
                 data-needle-type="line"
-                data-needle-width="3"
-                data-needle-circle-size="8"
+                data-needle-width="2"
+                data-needle-circle-size="7"
                 data-needle-circle-outer="true"
                 data-needle-circle-inner="false"
                 data-animation-duration="1500"
@@ -306,8 +302,8 @@
         <div class="card">
             <h3>Luftdruck</h3>
             <canvas id="pressure-gauge" data-type="radial-gauge"
-                data-width="270"
-                data-height="270"
+                data-width="180"
+                data-height="180"
                 data-units="hPa"
                 data-min-value="950"
                 data-max-value="1050"
@@ -319,8 +315,8 @@
                 data-border-shadow-width="0"
                 data-borders="false"
                 data-needle-type="arrow"
-                data-needle-width="3"
-                data-needle-circle-size="8"
+                data-needle-width="2"
+                data-needle-circle-size="7"
                 data-needle-circle-outer="true"
                 data-needle-circle-inner="false"
                 data-animation-duration="1500"
@@ -333,8 +329,8 @@
         <div class="card">
             <h3>Wind</h3>
             <canvas id="wind-gauge" data-type="radial-gauge"
-                data-width="270"
-                data-height="270"
+                data-width="180"
+                data-height="180"
                 data-units="m/s"
                 data-min-value="0"
                 data-max-value="30"
@@ -348,8 +344,8 @@
                 data-border-shadow-width="0"
                 data-borders="false"
                 data-needle-type="arrow"
-                data-needle-width="3"
-                data-needle-circle-size="8"
+                data-needle-width="2"
+                data-needle-circle-size="7"
                 data-needle-circle-outer="true"
                 data-needle-circle-inner="false"
                 data-animation-duration="1500"
@@ -362,8 +358,8 @@
         <div class="card">
             <h3>Niederschlag (1h)</h3>
             <canvas id="rain-gauge" data-type="radial-gauge"
-                data-width="270"
-                data-height="270"
+                data-width="180"
+                data-height="180"
                 data-units="mm"
                 data-min-value="0"
                 data-max-value="20"
@@ -377,8 +373,8 @@
                 data-border-shadow-width="0"
                 data-borders="false"
                 data-needle-type="arrow"
-                data-needle-width="3"
-                data-needle-circle-size="8"
+                data-needle-width="2"
+                data-needle-circle-size="7"
                 data-needle-circle-outer="true"
                 data-needle-circle-inner="false"
                 data-animation-duration="1500"
@@ -391,8 +387,8 @@
         <div class="card">
             <h3>Bewölkung</h3>
             <canvas id="cloud-gauge" data-type="radial-gauge"
-                data-width="270"
-                data-height="270"
+                data-width="180"
+                data-height="180"
                 data-units="%"
                 data-min-value="0"
                 data-max-value="100"
@@ -406,8 +402,8 @@
                 data-border-shadow-width="0"
                 data-borders="false"
                 data-needle-type="line"
-                data-needle-width="3"
-                data-needle-circle-size="8"
+                data-needle-width="2"
+                data-needle-circle-size="7"
                 data-needle-circle-outer="true"
                 data-needle-circle-inner="false"
                 data-animation-duration="1500"
@@ -415,6 +411,11 @@
                 data-value="0"
             ></canvas>
         </div>
+    </div>
+
+    <h2 id="location-title" style="margin-top: 20px;">Feldkirch, Vorarlberg, Österreich</h2>
+    <div style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 15px; min-height: 1.2rem;">
+        <span id="weather-main">—</span>
     </div>
 
     <div class="timestamp" id="last-update">Noch keine Daten</div>

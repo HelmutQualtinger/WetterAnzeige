@@ -7,6 +7,15 @@ services:
       - "5050:5050"
     env_file:
       - .env
+    environment:
+      - TZ=Europe/Zurich
     restart: unless-stopped
+    networks:
+      - reverse-proxy
     # Optional: If you want to run the DB containerized as well, you would add a mysql service here.
     # For now, we assume an external DB or one defined in .env
+
+networks:
+  reverse-proxy:
+    external: true
+

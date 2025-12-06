@@ -1,6 +1,12 @@
 # Use an official Python runtime as a parent image
 FROM python:3.9-slim
 
+# Install tzdata and set timezone to Europe/Zurich
+RUN apt-get update && apt-get install -y tzdata && \
+    ln -sf /usr/share/zoneinfo/Europe/Zurich /etc/localtime && \
+    dpkg-reconfigure -f noninteractive tzdata
+ENV TZ=Europe/Zurich
+
 # Set the working directory in the container
 WORKDIR /app
 
